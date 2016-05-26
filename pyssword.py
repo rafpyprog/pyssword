@@ -1,6 +1,7 @@
+#Author: Rafael Alves Ribeiro
+
 from msvcrt import getch
 import getpass, sys
-import time
 
 def pyssword(prompt='Password: '):
     '''
@@ -13,10 +14,9 @@ def pyssword(prompt='Password: '):
         pwd = getpass.getpass(prompt)
         return pwd
     else:
-        pwd = ""
-        print len(pwd)
-        countBackSpace = 0
-        sys.stdout.write(prompt)        
+        pwd = ""        
+        sys.stdout.write(prompt)
+        sys.stdout.flush()        
         while True:
             key = ord(getch())
             if key == 13: #Return Key
@@ -32,5 +32,6 @@ def pyssword(prompt='Password: '):
             else:
                 # Masks user input.
                 char = chr(key)
-                sys.stdout.write('*')                
+                sys.stdout.write('*')
+                sys.stdout.flush()                
                 pwd = pwd + char            
