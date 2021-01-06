@@ -19,6 +19,15 @@ Password: ********
 mysecret
 ```
 
+### Custom prompt
+```Python
+>>> from getpwd import getpwd
+>>> secret = getpwd("Please insert your password: ")
+Please insert your password: ********
+>>> print(secret)
+mysecret
+```
+
 
 If you would like to make any comments then please feel free to email me at rafael.alves.ribeiro@gmail.com
 
