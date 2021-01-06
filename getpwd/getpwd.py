@@ -16,7 +16,7 @@ BACKSPACE_LINUX = 127
 RETURN_KEY = 13
 
 
-def pyssword(prompt: str = "Password: ") -> str:
+def getpwd(prompt: str = "Password: ") -> str:
     """
     Prompt for a password and masks the input.
     Returns:
