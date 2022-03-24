@@ -2,6 +2,7 @@
 
 ![PyPI](https://img.shields.io/pypi/v/getpwd)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/getpwd)
+![Downloads](https://img.shields.io/pypi/dm/getpwd.svg)
 ![PyPI - Platform](https://img.shields.io/badge/Platform-Windows%7CLinux-green)
 
 
